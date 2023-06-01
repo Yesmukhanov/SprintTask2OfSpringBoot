@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:insert="head.html">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container-fluid" style="margin-left: 200px">
+        <div th:insert="navbar.html"></div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-9">
+                <div layout:fragment="siteContent"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

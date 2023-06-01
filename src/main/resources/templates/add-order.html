@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="main_layout.html">
+      <div layout:fragment="siteContent">
+            <div class="row" style="margin-left: 27%">
+                  <div class="col-6 mx-auto">
+            <form th:action="@{'/add-order'}" method="post">
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    Name and Surname:
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    <label>
+                                          <input type="text" class="form-control-lg" name="userName" required>
+                                    </label>
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    Course:
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    <label>
+                                          <select class="form-select-lg" name="courseName" required>
+                                                <option>Java Standard Edition</option>
+                                                <option>Java Enterprise Edition</option>
+                                                <option>Java Spring Boot</option>
+                                          </select>
+                                    </label>
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    Phone:
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    <label>
+                                          <input type="text" class="form-control-lg" name="phone" required>
+                                    </label>
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    Commentary:
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    <label>
+                                          <textarea class="form-control-lg" name="commentary" required rows="10"></textarea>
+                                    </label>
+                              </div>
+                        </div>
+                        <div class="row mt-3">
+                              <div class="col-12">
+                                    <label>
+                                          <button class="btn btn-success btn-lg">Add Order</button>
+                                    </label>
+                              </div>
+                        </div>
+
+            </form>
+            </div>
+      </div>
+      </div>
+</html>
